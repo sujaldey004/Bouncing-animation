@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise8</title>
+    <style>
+        .container{
+            background-color: blue;
+            height: 90vh;
+            width: 80vw;
+            display: flex;
+            align-items: flex-end;
+            overflow: hidden;
+        }
+        .ball{
+            height: 45px;
+            width: 45px;
+            background-color: red;
+            margin: 0px 10px;
+            border-radius: 60px;
+            animation: animation1 1s ease-out alternate-reverse infinite , animation3 5s linear infinite;
+        }
+        @keyframes animation1 {
+            from{
+
+            }
+            to{
+               transform: translateY(-280px); 
+            }
+        }
+
+        @keyframes animation3 {
+            from{
+
+            }
+            to{
+                transform: translateX(77vw );
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball box"></div>
+    </div>
+</body>
+</html>
